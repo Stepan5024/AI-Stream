@@ -23,3 +23,6 @@ twitchio==2.10.0
 typing_extensions==4.12.2
 virtualenv==20.27.1
 yarl==1.18.0
+detoxify
+transformers
+torch
