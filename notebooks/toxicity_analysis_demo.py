@@ -1,5 +1,5 @@
-from detoxify import Detoxify
 import pandas as pd
+from detoxify import Detoxify
 
 # Примеры текстов для анализа
 input_text = [
@@ -9,11 +9,11 @@ input_text = [
     "testo di esempio",
     "texto de exemplo",
     "örnek metin",
-    "пример текста"
+    "пример текста",
 ]
 
 # Анализ текста с использованием модели 'multilingual'
-results = Detoxify('multilingual').predict(input_text)
+results = Detoxify("multilingual").predict(input_text)
 
 # Вывод результатов в виде таблицы
 print(pd.DataFrame(results, index=input_text).round(5))
